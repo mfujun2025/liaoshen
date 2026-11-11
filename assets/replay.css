@@ -1,0 +1,50 @@
+/* GCW replay shim — replay-only additions, not part of the original bundle */
+.nav-dropdown.open .nav-dropdown-menu {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+}
+.gcw-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2147483000;
+  padding: 24px;
+}
+.gcw-lightbox video {
+  max-width: 92vw;
+  max-height: 84vh;
+  background: #000;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+}
+.gcw-lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 26px;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.85;
+}
+.gcw-lightbox-close:hover { opacity: 1; }
+.gcw-notice {
+  position: fixed;
+  left: 50%;
+  bottom: 36px;
+  transform: translateX(-50%);
+  background: rgba(26, 74, 122, 0.96);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.6;
+  z-index: 2147483000;
+  max-width: 88vw;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
